@@ -39,7 +39,7 @@ Pentru a crea un mediu Conda dedicat și a instala toate pachetele necesare, rul
 
 ## Inferență
 
-Oferim două [modele pre-antrenate](https://drive.google.com/drive/folders/1LATcnnGqhuik1UCI7qUip5A4KAbeF2EQ?usp=drive_link) pentru inferență: unul pentru encoder-ul de stil și celălalt pentru rețeaua de denoising. Extrageți aceste fișiere în folderul `/.experiments`.
+Am pregătit două [modele pre-antrenate](https://drive.google.com/drive/folders/1LATcnnGqhuik1UCI7qUip5A4KAbeF2EQ?usp=drive_link) pentru inferență: unul pentru encoder-ul de stil și celălalt pentru rețeaua de denoising. Extrageți aceste fișiere în folderul `/.experiments`.
 
 
 Modelul primește ca intrare un clip audio, un șablon de parametri pentru forma feței și o trăsătură de stil, și produce animații stilizate și sincronizate cu audio-ul.
