@@ -10,26 +10,32 @@ git clone https://github.com/thomasaugustinov/proiect-de-diploma.git
 cd proiect-de-diploma
 ```
 
-După clonarea repository-ului, instalați toate dependențele necesare utilizând fișierul requirements.txt. Utilizați următoarea comandă:
+### Descărcare date FLAME:
 
-```shell
-pip install -r setup/requirements.txt
-```
+Pentru a automatiza descărcarea și extragerea fișierelor FLAME:
+- Trebuie să vă înregistrați pe https://flame.is.tue.mpg.de/ și să acceptați termenii de licențiere FLAME.
 
-Descărcați fișierele FLAME urmând aceste instrucțiuni:
-  
-  - De pe site-ul oficial [FLAME](https://flame.is.tue.mpg.de/):
-    
-    - Descărcați modelul FLAME 2020 și dezarhivați-l în `/models/data/FLAME2020`
-    - Descărcați `landmark_embedding.npy` și `FLAME_masks.pkl` în `/models/data`.
+Apoi, rulați:
 
-
-Configurați environment-urile. Puteți face acest lucru rulând următoarele comenzi:
   ```shell
   bash ./setup/fetch_data.sh
+  ```
+  - Vi se va cere să vă autentificați cu contul de pe https://flame.is.tue.mpg.de/
+
+ - Scriptul va salva și dezarhiva `FLAME2020.zip` în `./models/data/FLAME2020`
+
+ - Va descărca `FLAME_masks.pkl` și `landmark_embedding.npy` în `./models/data/`
+
+### Configurare Conda și instalare pachete
+
+Pentru a crea un mediu Conda dedicat și a instala toate pachetele necesare, rulați:
+
+  ```shell
   bash ./install_conda.sh
   ```
 
+  - Environment creat: diffposetalk (Python 3.8)
+  - În cadrul scriptului, va fi apelat `pip install -r requirements.txt` pentru instalarea pachetelor.
 
 ## Inferență
 
