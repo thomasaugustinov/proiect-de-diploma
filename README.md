@@ -31,7 +31,7 @@ Apoi, rulați:
 Urmați aceste instrucțiuni pentru a descărca setul de date procesat:
 
  - Vă rugăm să completați [formularul de contact](https://forms.gle/s6p3uAkdmSJx5syL6) pentru a solicita setul de date.
- - Descărcați tot conținutul folderului HDTF_TFHP-lmdb și plasați-l în `datasets/HDTF_TFHP/lmdb`.
+ - Descărcați tot conținutul folderului `HDTF_TFHP-lmdb` și plasați-l în `datasets/HDTF_TFHP/lmdb`.
 
 ### Configurare Conda și instalare pachete
 
