@@ -60,3 +60,9 @@ Iată un exemplu:
 ```shell
 python demo.py --exp_name set_1_DPT --iter 110000 -a demo/input/audio/FAST.flac -c demo/input/coef/TH217.npy -s demo/input/style/TH217.npy -o TH217-FAST-TH217.mp4 -n 3
 ```
+
+Pentru a obține animații cu textură, adăugați opțiunea -t urmată de fișierul texturii. De exemplu:
+
+```shell
+python demo.py --exp_name set_1_DPT --iter 110000 -a demo/input/audio/FAST.flac -c demo/input/coef/TH217.npy -s demo/input/style/TH217.npy -t texture_map.png -o TH217-FAST-TH217.mp4 -n 3
+```
